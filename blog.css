@@ -1,0 +1,105 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
+}
+
+.main_text{
+    color: #A33327;
+    font-family: "Agency FB";
+    font-size: 7vw;
+    position: relative;
+    top: 10vh;
+    animation: done;
+    animation-duration: 2s;
+}
+@keyframes done {
+    0%{
+        top: -100vh;
+    }
+    100%{
+        top: 10vh;
+    }
+}
+.vr{
+    border-left: solid 0.4vw white;
+    height: 40vh;
+    position: relative;
+    left: 50vw;
+    top: 10vh;
+    animation: in;
+    animation-duration: 2s;
+}
+@keyframes in {
+    0%{
+        height: 0vh;
+    }
+    100%{
+        height: 40vh;
+    }
+}
+.sb{
+    position: fixed;
+    top: 65vh;
+    left: 30vw;
+    font-family: "Agency Fb";
+    font-size: 4vw;
+    animation: slideleft;
+    animation-duration: 5s;
+}
+.sb a{
+    text-decoration: none;
+    color: #A33327;
+}
+@keyframes slideleft{
+    0%{
+        left: 35vw;
+        opacity: 0;
+    }
+    100%{
+        left: 30vw;
+        opacity: 1;
+    }
+}
+.vb{
+    position: fixed;
+    top: 65vh;
+    left: 55vw;
+    font-family: "Agency Fb";
+    font-size: 4vw;
+    animation: slideright;
+    animation-duration: 5s;
+}
+.vb a{
+    text-decoration: none;
+    color: #A33327;
+    position: relative;
+    left: -2.5vw;
+}
+@keyframes slideright{
+    0%{
+        left: 50vw;
+        opacity: 0;
+        relative-width:300px;
+        relative_height:250px;
+    }
+    100%{
+        left: 55vw;
+        opacity: 1;
+    }
+}
+.box {
+    border: solid 0.2vw black;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    left: -0.5vw;
+    top: -0.8vh;
+    background-color: rgba(0,0,0, 0.6);
+
+
+}
